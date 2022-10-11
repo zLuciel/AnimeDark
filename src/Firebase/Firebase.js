@@ -1,18 +1,11 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {getAuth} from "firebase/auth"
-
+import {firebaseConfig }from "./firebase.cof"
 import {getFirestore,collection,getDocs,doc,getDoc,query,where,setDoc,deleteDoc} from "firebase/firestore"
 
 
-const firebaseConfig = {
-  apiKey: "AIzaSyANDEgRDcfDz9a6oeJy1WtF3MeP-sKX6nQ",
-  authDomain: "anime-8cd0d.firebaseapp.com",
-  projectId: "anime-8cd0d",
-  storageBucket: "anime-8cd0d.appspot.com",
-  messagingSenderId: "480641488872",
-  appId: "1:480641488872:web:9949d16ca3c52f0c2b365d"
-};
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

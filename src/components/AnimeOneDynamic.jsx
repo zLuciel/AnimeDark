@@ -6,7 +6,7 @@ import {
   AiOutlineHeart,
   AiFillHeart,
 } from "react-icons/ai";
-import { NavLink,Link } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 const AnimeOneDynamic = ({
   name,
   estado,

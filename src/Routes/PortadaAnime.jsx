@@ -23,7 +23,7 @@ const PortadaAnime = () => {
 const handleFavoritos = async ()=>{
   
   const existFav = await existsAnimeFavorite(params.id)
-  console.log(existFav);
+  //console.log(existFav);
   if(existFav){
     alert("ya se agrego")
   }else{

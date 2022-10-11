@@ -8,13 +8,10 @@ import { NavLink,useSearchParams } from 'react-router-dom';
 const Search = () => {
   const [buscar,setBuscar] = useState("")
   const [animejson,setAnimejson] = useState([])
-  //const [searchParams,setSearchParams] = useSearchParams();
-  //const [sixAnime,setSixAnime] = useState([])
-  //const [xdd,setXdd] = useState([])
+
 
 
   useEffect(()=>{
-   // setSearchParams({filter: buscar})
      const CajaAnime = document.querySelector(".Search-Anime-visual");
 
      const mostrar = async ()=>{

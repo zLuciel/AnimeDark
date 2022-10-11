@@ -32,7 +32,7 @@ const Login = () => {
     async function singInwithGoogle (googleProvider) {
         try {
             const res = await signInWithPopup(auth,googleProvider)
-            console.log(res);
+           // console.log(res);
         } catch (error) {
             console.error(error);
         }

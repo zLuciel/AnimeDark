@@ -24,7 +24,7 @@ export const Columna1 = styled.div`
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 400px;
     iframe{
         width: 100%;
         height: 100%;

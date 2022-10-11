@@ -1,9 +1,8 @@
-//import {useState,useEffect} from "react";
+
 import Anime4x4 from "./Anime4x4";
 import Columna2Main from "./Columna2Main";
 import Search from "./Search";
-//import { getEmision } from '../Firebase/Firebase'
-//import { LoadingAnime } from "./Loading"
+
 import {
   Columna1,
   ContainerPrincipal,
@@ -14,21 +13,7 @@ import {
 
 const Main = () => {
 
-  //const [Emision,setEmision] = useState([])
-  //const [cargando,setLoding] = useState(true)
-  
-
- /* useEffect(()=>{/** dara error mejor instalo en anime4x4 defrente */
-      //const AnimeEmision = async ()=>{
-     // const emision = await getEmision() //**en el map parasa el await y asyn */
-     /* setEmision(emision)
-      setLoding(false)
-    }
-    AnimeEmision()
-  },[])*/
-/*if(cargando){
-  return <LoadingAnime/>
-}*/
+ 
   return (
     <ContainerPrincipal>
       <MainContainer>

@@ -18,7 +18,7 @@ const Capitulos = () => {
    },[params.id])
  
   const capitulo = parseInt( params.capitulo.split("-")[1]) - 1
-  console.log(capitulo);
+  //console.log(capitulo);
   return (
     <CapitulosContainer>
       <Search/>

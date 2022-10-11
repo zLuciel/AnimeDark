@@ -7,7 +7,6 @@ import {useQuery} from "react-query"
 
 const Anime4x4 = () => {
   const {data: Emision,error, isLoading}  = useQuery(["AnimeEmision"],  getEmision)
-  console.log(Emision,458);
   if(isLoading){
     return <h1>Loading</h1>
   }

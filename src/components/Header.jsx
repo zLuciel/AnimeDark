@@ -1,5 +1,5 @@
-import {useRef,useEffect,useState} from "react";
-import Logotipo from "../assets/Logo/logoanime.png"
+import {useRef,useEffect} from "react";
+
 import {
   Configuraciones,
   Headers,
@@ -38,11 +38,11 @@ const Header = () => {
     }
   }
   ClickNav()
-console.log(Location);
+//console.log(Location);
   
   
   },[])
-console.log(Location,45);
+//console.log(Location,45);
  const handleSignOut = ()=>{
   auth.signOut()
   alert("sesion cerrada")
