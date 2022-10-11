@@ -6,7 +6,7 @@ import {getFirestore,collection,getDocs,doc,getDoc,query,where,setDoc,deleteDoc}
 
 
 
-
+const xd = "hola"
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 

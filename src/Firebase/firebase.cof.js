@@ -1,4 +1,4 @@
-
+/**env agregadi */
 export const firebaseConfig = {
     apiKey: process.env.REACT_APP_APIKEY,
     authDomain: process.env.REACT_APP_AUTHDOMAIN,
