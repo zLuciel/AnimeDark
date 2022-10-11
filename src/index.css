@@ -1,13 +1,37 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  /*display: flex;
+  justify-content: center;
+  min-height: 100vh;*/
+
+  /***borre el dato de arriba creo que era para centrar cuando alejo la pantalla*/
+ /* margin: 0 auto;
+  width:100%;*/
+  color: white;
+/*  background: linear-gradient(90deg, #152331 0%, #000000 100%);
+  background: linear-gradient(90deg, #000000 0%, #1F1E1E 100%);
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);*/
+  background: #162733;
+}
+.flex-body{
+  display: flex;
+  width: 100%;
+  border: 0px solid red;
+ /* background: linear-gradient(90deg, #FF512F 0%, #DD2476 100%);*/
+}
+@media screen and (max-width:1920px) {
+  body{
+    justify-content: flex-start;
+  }
+}
+.flex-header{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
