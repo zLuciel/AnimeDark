@@ -6,7 +6,11 @@ import { getEmision } from '../Firebase/Firebase'
 import {useQuery} from "react-query"
 
 const Anime4x4 = () => {
-  const {data: Emision,error, isLoading}  = useQuery(["AnimeEmision"],  getEmision)
+  const {data: Emision,error, isLoading}  = useQuery(["AnimeEmision"],  getEmision,{
+    staleTime:Infinity,
+    refetchOnReconnect:false,
+  })
+
   if(isLoading){
     return <h1>Loading</h1>
   }
