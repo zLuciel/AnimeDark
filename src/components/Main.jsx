@@ -9,7 +9,7 @@ import {
   FlexSuperiorMain,
   MainContainer,
 } from "./style/MainStyle";
-
+import videoanime from "../assets/mainanime.mp4"
 
 const Main = () => {
 
@@ -28,7 +28,8 @@ const Main = () => {
               src="https://mega.nz/embed/Yp9nnYiJ#YSlMu4Vl2b6cMqeDlEG5rhUhGhFn7bp84p00HIGb8qw"
               allowFullScreen
   ></iframe>*/}
-           <img style={{width:"100%",height:"100%",objectFit:"cover"}} src="https://10wallpaper.com/wallpaper/1280x1024/1603/Girl_grass_lying_art-Anime_Design_HD_Wallpaper_1280x1024.jpg" alt="" />
+          <video controls style={{width:"100%",height:"100%",objectFit:"cover"}} src={videoanime} autoPlay muted loop></video>
+           
           </div>
           <h1 className="Anime-emision-title">Ultimos Episodios :</h1>
           <Anime4x4 />

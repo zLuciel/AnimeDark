@@ -19,7 +19,7 @@ const Anime4x4 = () => {
   }
   return (
     <Anime4x4Conteiner>
-      {Emision.map( (Anime)=> <NavLink style={{color:"white"}} key={Anime.id} to={`search/${Anime.id}`}> <AnimeEmision img={Anime.imagen} titulo={Anime.anime} capitulo={Anime.capitulos}  /></NavLink> )}
+      {Emision.map( (Anime)=> <NavLink style={{color:"white"}} key={Anime.id} to={`search/${Anime.id}`}> <AnimeEmision img={Anime.imagen} sipnosis={Anime.sipnosis} titulo={Anime.anime} estado={Anime.estado}  /></NavLink> )}
    </Anime4x4Conteiner>
   )
 }

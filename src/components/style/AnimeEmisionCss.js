@@ -5,7 +5,6 @@ export const CardEmision = styled.div`
     flex: initial;
     position: relative;
     margin: 10px 10px ;
-    overflow: hidden;
     width:200px;//***responsive 200px */
     min-height: 310px;
     border-radius: 20px;
@@ -25,7 +24,23 @@ export const CardEmision = styled.div`
     transform: scale(1.04);
     transition: all 0.5s;
   }
+  .card-absolute{
+    display: none;
+    background: #D8F90F;
+    border: 1px solid greenyellow;
+    transform: translate(50%,10%);
+    z-index: 40;
+    top: 0;
+    position: absolute;
+    width: 250px;
+    p{
+      color: black;
+      font-size: .8rem;
+      padding: 10px;
+    }
+  }
   .img-bg {
+    border-radius: 20px;
     opacity: 0.5;
     position: absolute;
     width: 100%;

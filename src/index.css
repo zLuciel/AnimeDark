@@ -30,7 +30,8 @@ body{
   }
 }
 .flex-header{
-  height: 100vh;
+  
+  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;

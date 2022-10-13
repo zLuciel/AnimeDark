@@ -20,11 +20,11 @@ export const Columna1 = styled.div`
       margin-top: 10px;
     }
  .video-container{
-    border-radius: 20px;
+    border-radius:10px;
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 450px;
     iframe{
         width: 100%;
         height: 100%;

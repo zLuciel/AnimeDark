@@ -169,3 +169,23 @@ export async function Deletefavorite(id){
   return await deleteDoc(doc(db, "favoritos", id));
  
 }
+
+//**Traer fetch */
+
+export async function getFetchNoticia(){
+  const Animes = [];
+  try {
+    const collectionRef = collection(db,"fetch")
+    const q = query(collectionRef, where("id",`==`,"ags7Htpflt4mJhN1h6Ac"));
+    const querySnapshot = await getDocs(q);
+
+    querySnapshot.forEach(doc => {
+    const anime = {...doc.data()};
+    
+    Animes.push(anime)
+    })
+    return Animes
+  } catch (error) {
+    console.log(error);
+  }
+}

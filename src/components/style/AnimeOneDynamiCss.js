@@ -49,6 +49,7 @@ grid-template-rows: minmax(max-content,600px) 1fr;
     max-width: 900px;
 
 .sipnosis-one{
+    font-size: 1.3rem;
     color: #D7D7D7;
     padding-right: 80px;
 }
@@ -79,12 +80,11 @@ grid-template-rows: minmax(max-content,600px) 1fr;
     display: flex;
     align-items: center;
     p{
-        padding-top: 6px;
         margin: 0 3px;
-        font-size: .8rem;
     }
 }
 button{
+    border: 1px solid black;
     cursor: pointer;
     display: flex;
     align-items: center;
