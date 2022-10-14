@@ -7,6 +7,8 @@ import { getAnimeId } from '../Firebase/Firebase'
 import {getNoticias1} from "../api/NoticiaAnimeApi?^v4"
 import {useQuery} from "react-query"
 import NoticiasAnime from '../components/NoticiasAnime?^t=v32'
+
+import { DiscussionEmbed } from 'disqus-react'
 const Capitulos = () => {
     const params = useParams()
     const navigate = useNavigate()
@@ -16,8 +18,16 @@ const {data: VideosAnime,error:error1, isLoading:isLoading1}  = useQuery(["Video
 
 const backCap = parseInt( params.capitulo.split("-")[1]) - 1
 const skipCap = parseInt( params.capitulo.split("-")[1]) + 1
-//let comentarios = "http://localhost:3000/search/bOXEehlrjZJAZ9fk2AIr/"+params.capitulo
 
+//**Configuracion para los comentarios de Disqus */
+const disqusShortname = "https-animedark-vercel-app"
+const disqusCongif = {
+  identifier: params.capitulo,
+  title:"AnimeDark",
+  url: "http://localhost:3000/search/PrVWX0ZNiV1H0QbQFFiV/"+params.capitulo
+}
+
+//**Funciones Botones de skip y back  (es mejor separan las funciones y tenerlos ordenados)*/
 const handleBack = () =>{
     navigate(`/search/${params.id}/capitulo-${backCap}`)
 }
@@ -50,7 +60,7 @@ const handleSkip = () =>{
       <button onClick={handleBack}>Anterior</button>
        <button onClick={handleSkip}>Siguiente</button>
 
-       <div id="disqus_thread"></div>
+       <DiscussionEmbed shortname={disqusShortname} config={disqusCongif} />
       </VideoGrid>
       <NoticiasGrid>
         <div className='bgxd'>

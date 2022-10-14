@@ -35,11 +35,11 @@ const AuthProvider = ({children,onUserLoggedIn,onUserNotLoggedIn,onUserNotRegist
              //** si el usuario no esta registrado ira ala pagina de registrar nombre-foto-contraseña */
              onUserNotRegistered(user);
         }
-        console.log(user.displayName);
+        //console.log(user.displayName);
         
     }else{
         onUserNotLoggedIn();
-        console.log("no hay nadie");
+        //console.log("no hay nadie");
     }
  }
     return (
