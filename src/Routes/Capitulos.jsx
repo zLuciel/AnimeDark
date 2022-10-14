@@ -50,7 +50,7 @@ const handleSkip = () =>{
       <button onClick={handleBack}>Anterior</button>
        <button onClick={handleSkip}>Siguiente</button>
 
-       <div className="fb-comments" data-href={"https://animedark.vercel.app/search/bOXEehlrjZJAZ9fk2AIr/"+params.capitulo} data-width="500" data-numposts="5"></div>
+       <div id="disqus_thread"></div>
       </VideoGrid>
       <NoticiasGrid>
         <div className='bgxd'>
