@@ -29,7 +29,7 @@ const handleSkip = () =>{
   if(isLoading || isLoading1){
     return <div>Loading</div>
   }
-      
+      console.log("https://animedark.vercel.app/search/bOXEehlrjZJAZ9fk2AIr/"+params.capitulo);
   return (
     <CapitulosContainer>
       <div className='absolute-bg-fixed'>
