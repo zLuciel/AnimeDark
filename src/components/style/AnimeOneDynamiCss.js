@@ -49,6 +49,7 @@ grid-template-rows: minmax(max-content,600px) 1fr;
     max-width: 900px;
 
 .sipnosis-one{
+    line-height: 1.5;
     font-size: 1.3rem;
     color: #D7D7D7;
     padding-right: 80px;

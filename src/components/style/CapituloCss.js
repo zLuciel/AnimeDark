@@ -33,15 +33,35 @@ backdrop-filter: blur(5px);
 
 export const SearchGrid = styled.div`
 grid-area: Search;
+width: 87%;
+margin: 10px auto;
 `
 export const VideoGrid = styled.div`
 grid-area: Capitulo;
+width: 80%;
+margin: 0 auto;
+position: relative;
 h1{
-    font-size: 6rem;
+    font-size: 7rem;
     margin-bottom: 5px;
 }
 p{
+    color: #D7D7D7D6;
+    line-height: 1.5;
+    font-size: 1.2rem;
     padding-right: 80px;
+    margin: 10px 0px;
+}
+button{
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+button:nth-child(6){
+    background: #D8F90F;
 }
 `
 
@@ -54,13 +74,12 @@ margin: 10px 20px;
 export const VideoContainer = styled.div`
 justify-self: center;
 align-self: center;
-width: 80%;
-margin: 0 auto;
-
-height: 500px;
+width: 100%;
+height: 380px;
 iframe{
     border-radius: 10px;
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
+
 `
