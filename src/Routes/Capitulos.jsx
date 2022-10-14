@@ -50,7 +50,7 @@ const handleSkip = () =>{
       <button onClick={handleBack}>Anterior</button>
        <button onClick={handleSkip}>Siguiente</button>
 
-  
+       <div id="disqus_thread"></div>
       </VideoGrid>
       <NoticiasGrid>
         <div className='bgxd'>
