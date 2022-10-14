@@ -16,7 +16,8 @@ const {data: VideosAnime,error:error1, isLoading:isLoading1}  = useQuery(["Video
 
 const backCap = parseInt( params.capitulo.split("-")[1]) - 1
 const skipCap = parseInt( params.capitulo.split("-")[1]) + 1
-const comentarios = `http://localhost:3000/search/bOXEehlrjZJAZ9fk2AIr/${params.capitulo}`
+//let comentarios = "http://localhost:3000/search/bOXEehlrjZJAZ9fk2AIr/"+params.capitulo
+
 const handleBack = () =>{
     navigate(`/search/${params.id}/capitulo-${backCap}`)
 }
@@ -49,7 +50,7 @@ const handleSkip = () =>{
       <button onClick={handleBack}>Anterior</button>
        <button onClick={handleSkip}>Siguiente</button>
 
-       <div className="fb-comments" data-href={comentarios} data-width="500" data-numposts="5"></div>
+       <div className="fb-comments" data-href={"https://animedark.vercel.app/search/bOXEehlrjZJAZ9fk2AIr/"+params.capitulo} data-width="500" data-numposts="5"></div>
       </VideoGrid>
       <NoticiasGrid>
         <div className='bgxd'>
