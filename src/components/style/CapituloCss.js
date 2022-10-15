@@ -16,6 +16,7 @@ border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 1);//**original 0.3 */
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
+margin-right: 30px;
 }
 .absolute-bg-fixed{
     position: fixed;
@@ -33,12 +34,12 @@ backdrop-filter: blur(5px);
 
 export const SearchGrid = styled.div`
 grid-area: Search;
-width: 87%;
+width: 94%;
 margin: 10px auto;
 `
 export const VideoGrid = styled.div`
 grid-area: Capitulo;
-width: 80%;
+width: 90%;
 margin: 0 auto;
 position: relative;
 h1{
@@ -60,9 +61,7 @@ button{
     border: 1px solid black;
     margin-right: 10px;
 }
-button:nth-child(6){
-    background: #D8F90F;
-}
+
 `
 
 export const NoticiasGrid = styled.div`
@@ -72,14 +71,32 @@ margin: 10px 20px;
 `
 
 export const VideoContainer = styled.div`
-justify-self: center;
-align-self: center;
+display: flex;
 width: 100%;
-height: 380px;
-iframe{
+height: 580px;
+.videocapitulo{
+width: 90%;
+height: 480px;
+
+ iframe{
     border-radius: 10px;
-    width: 80%;
+    width: 100%;
     height: 100%;
+    margin-bottom: 10px;
 }
+h2{
+    margin-bottom: 10px;
+}
+.btn-video > button{
+   
+    background: greenyellow;
+        color: black;
+    :hover{
+        background: black;
+    color: white;
+    }
+}
+}
+
 
 `

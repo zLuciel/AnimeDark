@@ -22,9 +22,10 @@ const skipCap = parseInt( params.capitulo.split("-")[1]) + 1
 //**Configuracion para los comentarios de Disqus */
 const disqusShortname = "https-animedark-vercel-app"
 const disqusCongif = {
-  identifier: params.capitulo,
+  identifier:params.id + params.capitulo,
   title:"AnimeDark",
-  url: "http://localhost:3000/search/PrVWX0ZNiV1H0QbQFFiV/"+params.capitulo
+  url: "http://localhost:3000/search/"+params.id+"/"+params.capitulo,
+  language: 'Es',
 }
 
 //**Funciones Botones de skip y back  (es mejor separan las funciones y tenerlos ordenados)*/
@@ -52,13 +53,18 @@ const handleSkip = () =>{
 
         <h1>{VideosAnime[0].animecomplete} </h1>
        <p>{VideosAnime[0].sipnosis} </p>
-       <h2>{`Capitulo ${skipCap - 1}`}</h2>  
+       
         
       <VideoContainer>
+      <div className='videocapitulo'>
+      <h2>{`Capitulo ${skipCap - 1}`}</h2>  
        { <iframe src={VideosAnime[0].linkvideo[backCap]} title={VideosAnime[0].animecomplete} frameBorder="0" allowFullScreen></iframe>}
-      </VideoContainer>
-      <button onClick={handleBack}>Anterior</button>
+       <div className='btn-video'>
+       <button onClick={handleBack}>Anterior</button>
        <button onClick={handleSkip}>Siguiente</button>
+       </div>
+      </div>
+      </VideoContainer>
 
        <DiscussionEmbed shortname={disqusShortname} config={disqusCongif} />
       </VideoGrid>
