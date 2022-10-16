@@ -1,15 +1,21 @@
 import styled from "styled-components";
 
 export const ContainerPrincipal = styled.div`
-height: 4000px;
+height: 2000px;
 width: 100%;
 position: relative;
+
+.fixed-vol2{
+  border: 0px solid red;
+  height: 2000px;
+  //width: min-content(380px,500px);
+}
 `
 export const MainContainer = styled.main`
 width: 100%;
 height: 100vh;
-display: grid;
-grid-template-columns: minmax(703px,1200px) minmax(380px,500px);//**380px 500px*/
+display: flex;
+//grid-template-columns: minmax(703px,1200px) minmax(380px,500px);//**380px 500px*/
 `
 export const Columna1 = styled.div`
     /*width: 1200px;*/

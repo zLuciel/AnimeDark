@@ -7,7 +7,6 @@ min-width: 200px;
 //min-width: 80px;
 min-height: 100vh;
 height: max-content;
-
 display: flex;
 flex-direction: column;
 justify-content: center;

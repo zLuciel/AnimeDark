@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const Columna2 = styled.div`
-margin: 10px 20px;
+width: min-content(380px,500px);
+top: 0;
+position: sticky;
+margin: 20px 20px;
 height: min-content;
 background: rgba(0, 0, 0, 0.2);
 border-radius: 16px;

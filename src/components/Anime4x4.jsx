@@ -7,8 +7,8 @@ import {useQuery} from "react-query"
 
 const Anime4x4 = () => {
   const {data: Emision,error, isLoading}  = useQuery(["AnimeEmision"],  getEmision,{
-    staleTime:Infinity,
-    refetchOnReconnect:false,
+    //staleTime:Infinity,
+    //refetchOnReconnect:false,
   })
 
   if(isLoading){

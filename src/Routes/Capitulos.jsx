@@ -3,7 +3,9 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { CapitulosContainer, NoticiasGrid, SearchGrid, VideoContainer, VideoGrid } from '../components/style/CapituloCss'
 import Search from '../components/Search'
 import { getAnimeId } from '../Firebase/Firebase'
-
+import {
+  AiTwotoneStar
+} from "react-icons/ai";
 import {getNoticias1} from "../api/NoticiaAnimeApi?^v4"
 import {useQuery} from "react-query"
 import NoticiasAnime from '../components/NoticiasAnime?^t=v32'
@@ -52,8 +54,14 @@ const handleSkip = () =>{
       <VideoGrid>
 
         <h1>{VideosAnime[0].animecomplete} </h1>
+        <h2 className='temporada-cap'>{VideosAnime[0].temporada}
+           <AiTwotoneStar className="star-one" />
+            <AiTwotoneStar className="star-one" />
+            <AiTwotoneStar className="star-one" />
+            <AiTwotoneStar className="star-one" />
+            <AiTwotoneStar className="star-one" /></h2>
        <p>{VideosAnime[0].sipnosis} </p>
-       
+        <h3>Estado:<b>{VideosAnime[0].estado}</b></h3>
         
       <VideoContainer>
       <div className='videocapitulo'>

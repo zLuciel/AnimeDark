@@ -46,12 +46,26 @@ h1{
     font-size: 7rem;
     margin-bottom: 5px;
 }
+.temporada-cap{
+    display: flex;
+    align-items: center;
+ .star-one{
+    color: #D8F90F;
+    margin-left: 10px;
+ }
+}
 p{
     color: #D7D7D7D6;
     line-height: 1.5;
     font-size: 1.2rem;
-    padding-right: 80px;
+    padding-right: 0px;
     margin: 10px 0px;
+}
+h3 {
+margin-bottom: 10px;
+b{
+    color: #D8F90F;
+}
 }
 button{
     cursor: pointer;
@@ -75,7 +89,7 @@ display: flex;
 width: 100%;
 height: 580px;
 .videocapitulo{
-width: 90%;
+width: 100%;
 height: 480px;
 
  iframe{
@@ -88,12 +102,11 @@ h2{
     margin-bottom: 10px;
 }
 .btn-video > button{
-   
-    background: greenyellow;
+    background: white;
         color: black;
     :hover{
-        background: black;
-    color: white;
+    background: #D8F90F;
+    color: black;
     }
 }
 }

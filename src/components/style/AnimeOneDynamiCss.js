@@ -52,7 +52,7 @@ grid-template-rows: minmax(max-content,600px) 1fr;
     line-height: 1.5;
     font-size: 1.3rem;
     color: #D7D7D7;
-    padding-right: 80px;
+    padding-right: 0px;
 }
 .title-one{
     display: flex;

@@ -24,8 +24,7 @@ const AnimeOneDynamic = ({
       <div className="flex-container-info-one">
         <div className="contenido-principal-one">
           <div className="title-one">
-            <h1>{name}</h1>
-            {!agregado ? <AiOutlineHeart className="favorite-one" onClick={handleFavoritos}/> :  <AiFillHeart className="favorite-one" onClick={DeleteFavorite}/> }
+            <h1>{name} {!agregado ? <AiOutlineHeart className="favorite-one" onClick={handleFavoritos}/> :  <AiFillHeart className="favorite-one" onClick={DeleteFavorite}/> }</h1>
           </div>
           <div className="temporada-one">
             <p>{temporada}</p>

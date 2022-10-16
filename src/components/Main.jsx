@@ -34,7 +34,10 @@ const Main = () => {
           <h1 className="Anime-emision-title">Ultimos Episodios :</h1>
           <Anime4x4 />
         </Columna1>
-        <Columna2Main />
+        <div className="fixed-vol2">
+          <Columna2Main />
+        </div>
+        
       </MainContainer>
     </ContainerPrincipal>
   );
